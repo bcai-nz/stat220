@@ -10,5 +10,5 @@
 
 ## Some fun facts about me
 - I am currently majoring in computer science at UoA.
-- I really enjoyed taking Stats 101 and I think I will enjoy this course just as much.
+- I really enjoyed taking [STATS 101](https://www.stat.auckland.ac.nz/courses/stage1/STATS_101) in my first year so I think I will enjoy this course just as much.
 - I usually hang out and study with friends in the engineer building when I have time to spare between classes.
