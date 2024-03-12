@@ -1,7 +1,7 @@
 # Benjamin Cai's Stats220 Project Page
 
 ## About this repository
-*Welcome to my stats220 project page, here you will find some files that relate to the projects that I have done in Stats220 at the University of Auckland.*
+*Welcome to my stats220 project page, here you will find some files that relate to the projects that I have done in Stats220 at the **University of Auckland**.*
 
 ## Project Links
 1. [Project 1 - Creating a Meme](https://github.com/bcai04/stat220/blob/main/project_1)
