@@ -1,0 +1,81 @@
+---
+title: "Homepage"
+author: "Benjamin Cai | bcai971 | bcai971@aucklanduni.ac.nz"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- embed font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<!-- end embed -->
+```{css, echo=FALSE}
+  body {
+    background-color: #293241;
+    color: #E7E2D2;
+  }
+
+  h1.header {
+    color: #EE6C4D;
+    font-weight: bold;
+    font-family: "Lora", serif;
+  }
+
+  h2.subheader {
+    color: #EE6C4D;
+    font-weight: bold;
+    font-family: "Lora", serif;  
+  }
+  
+  p.paragraph {
+    font-style: italic;
+    font-family: "Lora", serif;
+    font-size: 17px;
+  }
+  
+  img.fix {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 256px;
+    height: 256px;
+  }
+  
+  li {
+    font-style: italic;
+    font-family: "Lora", serif;
+    font-size: 17px;  
+  }
+
+```
+
+<a href="https://github.com/bcai-nz/"> <img src="https://github.com/bcai-nz/stat220/blob/main/project_1/logo/LOGO.PNG?raw=true" class="fix"> </a>
+
+<h1 class="header",> <b> About Me </b> </h1>
+
+<p class="paragraph"> Welcome to my about me page! Here you can find contact information and fun facts about me. Although this page is currently quite basic, I plan to add more features as I learn more. </p>
+
+<h2 class="subheader"> Hobbies </h2>
+- Likes reading books and enjoys listening to music.
+- Likes doing morning walks.
+- Likes hanging out with friends.
+
+<h2 class="subheader"> Courses that I am taking in 2024 S1 </h2>
+- COMPSCI 210
+- COMPSCI 230
+- STATS 220
+- PHYSICS 140
+
+<h2 class="subheader"> Contact me! </h2>
+- [Twitter]("https://twitter.com/blinkblonk")
+- [Email]("bcai971@aucklanduni.ac.nz")
+- [GitHub]("https://github.com/bcai-nz")
+
+<h2 class="subheader"> Project pages for Stats220 </h2>
+- [Project 1]("https://github.com/bcai-nz/stat220/tree/main/project_1")
+- [Project 2]("https://github.com/bcai-nz/stat220/tree/main/project_2")
+- [Project 3]("https://github.com/bcai-nz/stat220/tree/main/project_2")
