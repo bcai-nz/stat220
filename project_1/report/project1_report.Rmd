@@ -11,16 +11,18 @@ output: html_document
 
 <table class="center">
   <tr>
-    <th><a href="#project_requirement">Project Requirements  </a></th>
-    <th><a href="#meme_inspo">My Meme Inspiration  </th>
-    <th><a href="#design_analysis">Design Analysis  </th>
-    <th><a href="#changes">Changes  </th>
-    <th><a href="#meme">My Meme  </th>
-    <th><a href="#project_screenshots">Project Screenshots  </th>
-    <th><a href="#creativity">Creativity  </th>
-    <th><a href="#reflection">Learning Reflection </th>
+    <th class="fix"><a href="#project_requirement">Project Requirements  </a></th>
+    <th class="fix"><a href="#meme_inspo">My Meme Inspiration  </th>
+    <th class="fix"><a href="#design_analysis">Design Analysis  </th>
+    <th class="fix"><a href="#changes">Changes  </th>
+    <th class="fix"><a href="#meme">My Meme  </th>
+    <th class="fix"><a href="#project_screenshots">Project Screenshots  </th>
+    <th class="fix"><a href="#creativity">Creativity  </th>
+    <th class="fix"><a href="#reflection">Learning Reflection </th>
   </tr>
 </table>
+
+<hr class="split.sections">
 
 ```{r setup, include=FALSE}
   knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
@@ -31,14 +33,29 @@ output: html_document
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+```{html echo=FALSE}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
-```{css echo=FALSE}
+```
+
+```{css echo=TRUE}
 
   .lora-<uniquifier> {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: <450>;
     font-style: normal;
+  }
+  
+  th.table_header {
+    color: #EE6C4D;
+    font-weight: bold;
+    font-family: "Lora", serif;  
+    text-align: center;  
+    font-size: 14px;
+  
   }
   
   div.navigation {
@@ -53,7 +70,7 @@ output: html_document
     margin-right: auto;
   }
   
-  th {
+  th.fix {
     color: #E7E2D2;
     font-weight: bold;
     font-size: 13px;
@@ -124,7 +141,16 @@ output: html_document
     font-style: italic;
     font-family: "Lora", serif;
     font-size: 24px;
+    text-align: center;
   }
+  
+  div.subtitle {
+    color: #EE6C4D;
+    font-style: italic;
+    font-family: "Lora", serif;
+    font-size: 9px;
+    text-align: center;
+}
   
   p.fix {
     display: block;
@@ -133,19 +159,26 @@ output: html_document
     width: 50%;
   }
   
+  div.fix {
+    text-align: center;
+  }
+  
   div.paragraph_break {
     color: #EE6C4D;
     font-family: "Lora", serif;
     text-align: center;
   }
   
-  div.fix {
+  div.float {
     text-align: center;
-    color: #EE6C4D;
-    font-family: "Lora", serif;
   }
   
   a {
+    font-family: "Lora", serif;
+    color: #EE6C4D;
+  }
+  
+  div.figcaption {
     font-family: "Lora", serif;
     color: #EE6C4D;
   }
@@ -161,8 +194,8 @@ output: html_document
 <p class="paragraph"> 
   Using GitHub, I believe that I have met the requirements related to working with this tool. Although GitHub can be used as a method of version control, I have been using it to store files with the intention of openly sharing my work in data science, with the additional benefit in how it could be possible that others can collaborate and help out. </p>
 
-<div class="fix"> [My Website]("https://github.com/bcai-nz") </div>
-<div class="fix"> [My Repo]("https://github.com/bcai-nz/stat220") </div>
+<div class="fix"> [My Website](https://github.com/bcai-nz) </div>
+<div class="fix"> [My Repo](https://github.com/bcai-nz/stat220) </div>
 
 <div class="paragraph_break">-☆-</div>
 
@@ -172,11 +205,11 @@ output: html_document
 
 <hr class="split.sections">
 
-<img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-04/13/16/enhanced/buzzfeed-prod-fastlane-01/original-30493-1492113768-3.jpg">
+<img src="https://github.com/bcai-nz/stat220/blob/main/project_1/meme_inspo/meme-inspo.jpg?raw=true">
 
 <hr class="split.sections">
 
-<h2 class="header",id="design_analysis"> Design analysis </h2>
+<h2 class="header", id="design_analysis"> Design analysis </h2>
 
 <hr class="split.sections">
 
@@ -190,7 +223,7 @@ output: html_document
 
 <hr class="split.sections">
 
-<h2 class="header",id="changes"> How I will do this is by changing... </h2>
+<h2 class="header", id="changes"> How I will do this is by changing... </h2>
 
 <hr class="split.sections">
 		
@@ -204,103 +237,22 @@ output: html_document
 
 <hr class="split.sections">
 
-<h2 class="header",id="project_screenshots"> Project Screenshots </h2> 
+<h2 class="header", id="project_screenshots"> Project Screenshots </h2> 
 
 <hr class="split.sections">
 
-<img src="C:\Users\benc1\Documents\stats 220\lab_01\report\project_image.png">
-<img src="C:\Users\benc1\Documents\stats 220\lab_01\report\github.png">
+<img src="https://github.com/bcai-nz/stat220/blob/main/project_1/report/project_image.PNG?raw=true">
+<img src="https://github.com/bcai-nz/stat220/blob/main/project_1/report/github.png?raw=true">
 
 <hr class="split.sections">
 
-<h2 class="header"> My meme </h2>
+<h2 class="header", id="meme"> My meme </h2>
 
 <hr class="split.sections">
 
-<p class="fix">
-```{r meme-code, eval=TRUE, echo=FALSE}
+<p class="fix"> ![My meme](https://raw.githubusercontent.com/bcai-nz/stat220/main/project_1/meme/my_meme.gif) </p>
 
-  library(magick)
-  
-  main_header_1 = image_blank(width = 400,
-                              height = 400,
-                              color = "#000000") %>%  
-    image_annotate(text = "whats it like when you start stats 220",
-                   size = 20, gravity = "center",
-                   color = "white", font="Times") %>% 
-    image_annotate("(as a beginner)", size = 20, color = "white", font="Comic Sans",
-                   location = "+130+320")
-  
-  main_header_2 = image_blank(width = 400,
-                              height = 400,
-                              color = "#000000") %>% 
-    image_annotate(text = "what its probably like when you finish stats 220",
-                   size = 20, gravity = "center", color = "white", font="Times") %>% image_annotate("(as a pro)", size = 20, color = "white", font="Comic Sans", location = "+155+320")
-
-  cat_01 <- image_scale(image_read(path = "https://mypersiancat.com/wp-content/uploads/2020/10/121032692_354013039279835_8100200820807336949_n.jpg"),400)
-  
-  b_frame_1 <- image_annotate(cat_01, "ogod. coding in a stats class??",
-                              size = 20, color = "blue",
-                              font="Comic Sans", degrees = 35,
-                              location = "+150+80")
-  
-  b_frame_2 <- image_annotate(b_frame_1, "how do i merge image",
-                              size = 23, color = "green",
-                              font="Comic Sans", degrees = -36,
-                              location = "+50+290")
-  
-  b_frame_3 <- image_annotate(b_frame_2, "help why is this not working",
-                              size = 18, color = "red", font="Comic Sans",)
-
-  
-  beginner_animation = c(b_frame_1, b_frame_2, b_frame_3) %>% image_animate(fps=1)
-  
-  cat_02 <- image_crop(image_scale(image_read(path = "https://i.redd.it/4aldq67xw5e31.jpg"),500),400)
-  
-  e_frame1 <- image_annotate(cat_02, "you have reached max level.",
-                             size = 20, color = "green", font="Comic Sans",
-                             degrees = 0, location = "+80+40", boxcolor="black")
-  
-  e_frame2 <- image_annotate(e_frame1, "level 100!!!",
-                             size = 20, color = "green",
-                             font="Comic Sans", degrees = 0,
-                             location = "+160+70", boxcolor="black")
-  
-  e_frame3 <- image_annotate(e_frame2, "your new rank is statistics god!",
-                             size = 20, color = "green",
-                             font="Comic Sans", degrees = 0,
-                             location = "+70+110", boxcolor="black")
-  
-  e_frame3 <- image_annotate(e_frame2, "here are your key skills highlighted.",
-                             size = 20, color = "green", font="Comic Sans",
-                             degrees = 0, location = "+30+110", boxcolor="black")
-  
-  e_frame4 <- image_annotate(e_frame3, "1. i can code!!", size = 20,
-                             color = "green", font="Mono", degrees = 0,
-                             location = "+50+150", boxcolor="white")
-  
-  e_frame5 <- image_annotate(e_frame4, "2. i can create f a n c y plots using r!!.",
-                             size = 20, color = "green", font="Georgia", degrees = 0,
-                             location = "+50+190", boxcolor="white")
-  
-  e_frame6 <- image_annotate(e_frame5, "3. i can use apis to scrape data :O.",
-                             size = 20, color = "green", font="Georgia", degrees = 0,
-                             location = "+50+230", boxcolor="white")
-  
-  e_frame7 <- image_annotate(e_frame6, "4. i can use special tools to do special things.",
-                             size = 16, color = "green", font="Georgia", degrees = 0,
-                             location = "+50+270", boxcolor="white")
-  
-  e_frame8 <- image_annotate(e_frame7, "5. i can perceptively analyse data.",
-                             size = 20, color = "green", font="Georgia",
-                             degrees = 0, location = "+50+300", boxcolor="white")
-  
-  expert_animation = c(e_frame1, e_frame2, e_frame3, e_frame4, e_frame5, e_frame6, e_frame7 , e_frame8) %>% image_animate(fps=1)
-  
-  c(main_header_1, beginner_animation, main_header_2, expert_animation) %>% image_animate(fps=1)
-  
-```
-</p>
+<div class="subtitle"> My meme may take some time to load as the file is pretty big sorry. </div>
 
 <hr class="split.sections">
 
@@ -315,7 +267,7 @@ output: html_document
  
 <hr class="split.sections">
 
-```{r animation-code, eval=FALSE}
+```{r meme-code, eval=FALSE}
 
   library(magick)
   # bcai971
@@ -474,17 +426,54 @@ output: html_document
 ```
 <hr class="split.sections">
 
-<h2 class="header",id="creativity"> Creativity </h2>
+<h2 class="header", id="creativity"> Creativity </h2>
 
 <hr class="split.sections">
 
 <p class="paragraph_alt"> In the development process when creating my meme, I had to go through several challenges such as with trying to debug the size of the second image as the image wasn't a full square but a rectangle. So, to fix this issue I had to use the image_resize command before using image_crop to get the image into the desired specifications. Additionally, when creating my meme I had also tried using extra features such as 'degrees' to change the angles of the text along with 'box_color' to make some parts of the animation more easier to read because the contrast of a thin green text on a light image would make it hard to read. Additionally, I have attempted to show creativity by adding some flair to my website, particularly through the inclusion of colors, fonts and a navigation bar. </p>
 
+<hr class="split.sections">
+
+<h3 class="list_header"> Summary of changes </h3>
+
+<hr class="split.sections">
+
+<table class="center">
+  <tr>
+    <th class="table_header">r</th>
+    <th class="table_header">css</th>
+    <th class="table_header">html</th>
+  </tr>
+  <tr>
+    <td>
+    	 <li> image_crop </li>
+    	 <li> box_color </li>
+    	 <li> degrees </li>
+    	 <li> image_resize </li>
+    	 <li> position </li>
+    </td>
+    <td>
+    	 <li> font change & size </li>
+       <li> text colors </li>
+       <li> background </li>
+       <li> centering images </li>
+       <li> category separators </li>
+    </td>
+    <td>
+    	 <li> about me page </li>
+    	 <li> navbar (with inclusion of internal links for easy access) </li>
+    	 <li> experimentation with tables </li>
+    </td>
+  </tr>
+</table>
+
+</p>
+
 <div class="paragraph_break">-☆-</div>
 
 <hr class="split.sections">
 
-<h2 class="header",id="reflection"> Learning reflection </h2>
+<h2 class="header", id="reflection"> Learning reflection </h2>
 
 <hr class="split.sections">
 
